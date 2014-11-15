@@ -1,0 +1,37 @@
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+* + * {
+  margin-bottom: 0;
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  margin-bottom: .5em;
+  padding: .5em;
+  width: 100%;
+  z-index: 1;
+}
+
+header > h1 {
+  margin: 0;
+}
+
+@media all and (min-width: 35em) {
+  header {
+    left: 0;
+    position: fixed;
+    top: 0;
+  }
+}

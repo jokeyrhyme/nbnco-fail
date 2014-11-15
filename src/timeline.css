@@ -1,0 +1,11 @@
+ul.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+ul.timeline > li {
+  display: block;
+  list-style: none;
+}

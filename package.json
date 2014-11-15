@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "$(npm bin)/jsx -x jsx --watch src dist"
   },
   "author": "Ron Waldon (http://jokeyrhy.me/)",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "moment": "^2.8.3",
+    "normalize.css": "^3.0.2",
     "react": "^0.12.0"
   },
   "devDependencies": {
