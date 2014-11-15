@@ -28,6 +28,7 @@ header > h1 {
   margin: 0;
 }
 
+/* put the header and the timeline side-by-side when they both fit */
 @media all and (min-width: 35em) {
   header {
     left: 0;
