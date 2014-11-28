@@ -1,6 +1,6 @@
 # Changelog
 
-## next
+## v1.1.0
 
 ### Changed
 
