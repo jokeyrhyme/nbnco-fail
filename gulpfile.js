@@ -15,12 +15,19 @@ var cssmin = require('gulp-cssmin');
 var htmlreplace = require('gulp-html-replace');
 var uncss = require('gulp-uncss');
 
+var cssGlob = [
+'node_modules/normalize.css/normalize.css',
+'src/vendor/*.css',
+'src/main.css',
+'src/*.css'
+];
+
+var htmlGlob = [
+  'src/*.html'
+];
+
 gulp.task('css', function () {
-  return gulp.src([
-    'node_modules/normalize.css/normalize.css',
-    'src/main.css',
-    'src/*.css'
-  ])
+  return gulp.src(cssGlob)
     .pipe(uncss({
       html: [ 'src/index.html' ]
     }))
@@ -29,10 +36,8 @@ gulp.task('css', function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('html', ['css'], function () {
-  return gulp.src([
-    'src/*.html'
-  ])
+gulp.task('html', [ 'css' ], function () {
+  return gulp.src(htmlGlob)
     .pipe(htmlreplace({
       css: {
         src: [''],

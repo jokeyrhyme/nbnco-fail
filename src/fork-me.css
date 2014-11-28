@@ -5,27 +5,23 @@ footer {
   width: 100%;
 }
 
-.fork-me > img {
+.github-fork-ribbon-wrapper {
   display: none;
 }
 
 @media all and (min-width: 50em) {
+
   footer {
     margin-top: 0;
     padding: 0;
   }
 
   .fork-me {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-  }
-
-  .fork-me > img {
-    display: inline-block;
-  }
-  .fork-me > span {
     display: none;
   }
+
+  .github-fork-ribbon-wrapper {
+    display: block;
+  }
+
 }
