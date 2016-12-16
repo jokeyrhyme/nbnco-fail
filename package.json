@@ -12,15 +12,15 @@
   "dependencies": {
     "github-fork": "simonwhitaker/github-fork-ribbon-css#be5a2016b82e586d9e194489d1108a7eb8435901",
     "moment": "^2.8.3",
-    "normalize.css": "^3.0.2",
-    "react": "^0.12.0"
+    "normalize.css": "^5.0.0",
+    "react": "^15.4.1"
   },
   "devDependencies": {
     "gulp": "^3.8.10",
     "gulp-concat": "^2.4.1",
     "gulp-cssmin": "^0.1.6",
     "gulp-html-replace": "^1.4.1",
-    "gulp-uncss": "^0.5.1",
-    "react-tools": "^0.12.0"
+    "gulp-uncss": "^1.0.6",
+    "react-tools": "^0.13.3"
   }
 }
